@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Moore Retaliation | Teamsters Local 14 vs. Vestis Las Vegas</title>
+<meta name="description" content="Workers at Vestis Uniform and Workplace Company's Las Vegas facility have voted unanimously to authorize an unfair labor practice strike. Hear their stories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#101010;
+  --paper:#f5f1e6;
+  --gold:#ffb81c;
+  --strike:#c8102e;
+  --slate:#2b2b2b;
+  --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ===== NAV ===== */
+nav{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--paper);border-bottom:4px solid var(--gold)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.nav-brand span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;opacity:.85}
+.nav-links a:hover,.nav-links a:focus-visible{opacity:1;color:var(--gold)}
+.nav-toggle{display:none;background:none;border:0;color:var(--paper);font-size:1.6rem;cursor:pointer}
+
+/* ===== HERO ===== */
+header.hero{background:var(--ink);color:var(--paper);padding:88px 0 72px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;
+  background:repeating-linear-gradient(-45deg,var(--gold) 0 22px,var(--ink) 22px 44px)}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:1rem;margin-bottom:18px}
+.hero h1{font-family:'Anton',sans-serif;font-size:clamp(3rem,9vw,6.6rem);line-height:.95;text-transform:uppercase;letter-spacing:.01em}
+.hero h1 .moore{color:var(--gold);position:relative;display:inline-block}
+.hero h1 .moore::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:.09em;background:var(--strike);transform:rotate(-2deg)}
+.hero-sub{max-width:640px;margin-top:26px;font-size:1.2rem;font-weight:500}
+.hero-stats{display:flex;gap:40px;margin-top:40px;flex-wrap:wrap}
+.stat{border-left:4px solid var(--gold);padding-left:16px}
+.stat b{font-family:'Anton',sans-serif;font-size:2.2rem;display:block;line-height:1}
+.stat span{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.9rem;opacity:.8}
+.hero-ctas{margin-top:44px;display:flex;gap:16px;flex-wrap:wrap}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero-photo{border:4px solid var(--gold);position:relative;z-index:2;align-self:center}
+.hero-photo img{width:100%;display:block}
+.hero-photo figcaption{background:var(--gold);color:var(--ink);font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.1em;font-size:.9rem;padding:10px 16px}
+.btn{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:1rem;text-decoration:none;padding:14px 28px;display:inline-block}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#e6a516}
+.btn-outline{border:2px solid var(--paper);color:var(--paper)}
+.btn-outline:hover{background:var(--paper);color:var(--ink)}
+
+/* ===== SECTIONS ===== */
+section{padding:84px 0}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--strike);font-size:.95rem;margin-bottom:10px}
+h2{font-family:'Anton',sans-serif;font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase;line-height:1.05;margin-bottom:22px}
+.lede{font-size:1.15rem;max-width:720px}
+
+/* story */
+#story{background:#ffffff}
+#story .story-copy p{color:#1a1a1a;font-size:1.05rem}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:44px;align-items:start}
+.story-copy p{margin-bottom:18px}
+.demand-box{background:var(--ink);color:var(--paper);padding:36px}
+.demand-box h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);font-size:1.1rem;margin-bottom:18px}
+.demand-box ol{list-style:none;counter-reset:d}
+.demand-box li{counter-increment:d;padding:14px 0;border-bottom:1px solid rgba(245,241,230,.2);display:flex;gap:16px;font-weight:500}
+.demand-box li:last-child{border-bottom:0}
+.demand-box li::before{content:counter(d,decimal-leading-zero);font-family:'Anton',sans-serif;color:var(--gold);font-size:1.2rem}
+
+/* testimonials */
+#testimonials{background:var(--ink);color:var(--paper)}
+#testimonials .eyebrow{color:var(--gold)}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px;margin-top:44px}
+.video-card{background:var(--slate);border-top:4px solid var(--gold)}
+.video-embed{position:relative;aspect-ratio:16/9;background:#000}
+.video-embed iframe,.video-embed video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-meta{padding:20px 22px 24px}
+.video-meta h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:1.15rem}
+.video-meta p{font-size:.95rem;opacity:.8;margin-top:6px}
+.testimonial-note{margin-top:36px;font-size:.9rem;opacity:.7;max-width:720px}
+
+/* ULPs */
+#ulps{background:#ffffff}
+#ulps .lede,#ulps .ulp-body p{color:#1a1a1a}
+.ulp-list{margin-top:44px;display:grid;gap:20px}
+.ulp-card{background:#faf8f2;border:1px solid #e3ddcc;border-left:6px solid var(--strike);padding:28px 30px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:start}
+.ulp-date{font-family:'Anton',sans-serif;font-size:1.05rem;text-transform:uppercase;line-height:1.3;min-width:96px}
+.ulp-body h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:1.2rem;margin-bottom:8px}
+.ulp-body p{font-size:.98rem}
+.ulp-case{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.85rem;color:#6b6555;margin-top:10px}
+.ulp-status{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;background:var(--gold);padding:6px 12px;white-space:nowrap}
+.ulp-disclaimer{margin-top:30px;font-size:.85rem;color:#6b6555;max-width:760px}
+
+/* action */
+#action{background:var(--gold)}
+#action .eyebrow{color:var(--ink)}
+.action-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:44px}
+.action-card{background:var(--ink);color:var(--paper);padding:32px}
+.action-card h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);font-size:1.2rem;margin-bottom:12px}
+.action-card p{font-size:.98rem;margin-bottom:18px}
+.action-card a{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);text-decoration:none;border-bottom:2px solid var(--gold)}
+
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:56px 0 40px;border-top:6px solid var(--gold)}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.foot-brand{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.4rem}
+.foot-brand span{color:var(--gold)}
+.foot-links{display:flex;gap:24px;list-style:none;flex-wrap:wrap}
+.foot-links a{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;text-decoration:none;opacity:.85}
+.foot-links a:hover{color:var(--gold);opacity:1}
+.foot-legal{margin-top:36px;font-size:.8rem;opacity:.6;max-width:860px;line-height:1.5}
+
+@media (max-width:760px){
+  .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;padding:12px 24px 20px;border-bottom:4px solid var(--gold)}
+  .nav-links.open{display:flex}
+  .nav-links li{padding:10px 0}
+  .nav-toggle{display:block}
+  .story-grid{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-photo{margin-top:8px}
+  .ulp-card{grid-template-columns:1fr;gap:12px}
+  .ulp-status{justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* In His Own Words section */
+#quotes{background:var(--ink);color:var(--paper)}
+#quotes .eyebrow{color:var(--gold)}
+#quotes .lede{color:var(--paper);opacity:.9}
+.quote-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:44px}
+.quote-card{border-left:5px solid var(--strike);background:#1c1c1c;padding:30px 32px;display:flex;flex-direction:column}
+.quote-card .mark{font-family:'Anton',sans-serif;color:var(--strike);font-size:2.4rem;line-height:.6;margin-bottom:12px}
+.quote-card blockquote{font-family:'Barlow',sans-serif;font-size:1.3rem;font-weight:600;line-height:1.4;margin-bottom:18px;flex:1}
+.quote-card cite{font-family:'Barlow Condensed',sans-serif;font-style:normal;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;color:var(--gold)}
+.quote-card .ctx{display:block;margin-top:10px;font-family:'Barlow',sans-serif;text-transform:none;letter-spacing:0;font-size:.92rem;color:var(--paper);opacity:.8;line-height:1.5}
+.quote-note{margin-top:34px;font-size:.9rem;opacity:.7;max-width:760px}
+
+/* Pop-up modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.show{display:flex}
+.modal{background:var(--ink);color:var(--paper);border:4px solid var(--gold);max-width:640px;width:100%;max-height:88vh;overflow-y:auto;position:relative}
+.modal-head{background:var(--gold);color:var(--ink);padding:22px 28px}
+.modal-head .k{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.85rem}
+.modal-head h2{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.9rem;line-height:1;margin-top:6px}
+.modal-body{padding:26px 28px}
+.modal-q{border-left:4px solid var(--strike);padding:6px 0 6px 18px;margin-bottom:22px}
+.modal-q blockquote{font-family:'Barlow',sans-serif;font-size:1.12rem;font-weight:600;line-height:1.4}
+.modal-q cite{display:block;margin-top:8px;font-family:'Barlow Condensed',sans-serif;font-style:normal;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem;color:var(--gold)}
+.modal-q .ctx{display:block;margin-top:6px;font-size:.88rem;opacity:.8;line-height:1.5}
+.modal-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.modal-close-x{position:absolute;top:14px;right:16px;background:none;border:0;color:var(--ink);font-size:1.8rem;line-height:1;cursor:pointer;font-weight:700}
+.modal .btn{cursor:pointer;border:0}
+@media (max-width:760px){
+  .modal-head h2{font-size:1.5rem}
+  .quote-card blockquote{font-size:1.15rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="nav-brand" href="#top">No <span>Moore</span> Retaliation</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#story">The Fight</a></li>
+      <li><a href="#quotes">In His Own Words</a></li>
+      <li><a href="#testimonials">Worker Testimonials</a></li>
+      <li><a href="#ulps">ULP Charges</a></li>
+      <li><a href="#action">Take Action</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Teamsters Local 14 &bull; Vestis Uniform and Workplace Company &bull; Las Vegas, NV</p>
+      <h1>No <span class="moore">Moore</span><br>Retaliation</h1>
+      <p class="hero-sub">Workers at Vestis' Las Vegas facility have voted unanimously to authorize an unfair labor practice strike. They are demanding that Vestis leadership end the unfair labor practices, hold local management accountable, and restore respect on the job.</p>
+      <div class="hero-stats">
+        <div class="stat"><b>100%</b><span>Unanimous strike authorization</span></div>
+        <div class="stat"><b>2</b><span>Federal ULP charges filed</span></div>
+        <div class="stat"><b>14</b><span>Workers standing together</span></div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#testimonials">Hear the Workers</a>
+        <a class="btn btn-outline" href="#ulps">See the Charges</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="workers.jpg" alt="Vestis Las Vegas workers standing together with Teamsters Local 14 picket signs, fists raised in solidarity">
+      <figcaption>Vestis Las Vegas workers, Teamsters Local 14</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="story">
+  <div class="wrap">
+    <p class="eyebrow">The Fight</p>
+    <h2>Respect Is Not Negotiable</h2>
+    <p class="lede">Vestis workers in Las Vegas keep this city's hospitals, casinos, and restaurants running with clean uniforms and workplace supplies. They deserve a workplace free from threats, intimidation, and retaliation.</p>
+    <div class="story-grid">
+      <div class="story-copy">
+        <p>Members of Teamsters Local 14 at the Vestis Las Vegas facility have reported a pattern of alleged threats, harassment, and retaliation by local management. When workers spoke up, they say conditions got worse, not better.</p>
+        <p>On June 27, 2026, a majority of the bargaining unit voted no on ratifying a proposed contract with Vestis. What Local 14's charges allege happened next is why this site exists: threats to strip commission routes from union activists and shop stewards, and a facility access code changed on the workers three days after the vote.</p>
+        <p>In July 2026, Local 14 filed two unfair labor practice charges against Vestis with the National Labor Relations Board. The facility then voted unanimously to authorize an unfair labor practice strike if the company fails to act.</p>
+        <p>This campaign exists so Vestis' senior leadership hears directly from the workers that local management has failed. Every video on this site is a worker telling their own story in their own words.</p>
+      </div>
+      <div class="demand-box">
+        <h3>What Workers Are Demanding</h3>
+        <ol>
+          <li>End the unfair labor practices at the Las Vegas facility</li>
+          <li>Hold local management accountable for its conduct</li>
+          <li>Guarantee no retaliation against any worker who speaks up</li>
+          <li>Restore dignity and respect on the job</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quotes">
+  <div class="wrap">
+    <p class="eyebrow">In His Own Words</p>
+    <h2>Statements Attributed to Robert Moore</h2>
+    <p class="lede">The following statements are attributed to Robert Moore, Operations Manager at Vestis' Las Vegas facility. Each is documented and supported by evidence held by Teamsters Local 14.</p>
+    <div class="quote-grid">
+
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>Vestis drivers &ldquo;make too much money.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>You&rsquo;re &ldquo;nowhere near a 10.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, July 6, 2026</cite>
+      </div>
+
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>I am the &ldquo;equivalent of Jack in authority&rdquo; at Vestis.</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>&ldquo;I don&rsquo;t think you&rsquo;re going to last here.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, July 22, 2026
+        <span class="ctx">Said in reference to a Route Sales Representative requesting time off when his daughter had heart surgery scheduled.</span></cite>
+      </div>
+
+      <div class="quote-card">
+        <div class="mark">&ldquo;</div>
+        <blockquote>&ldquo;I&rsquo;ll be the last one to be fired.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+
+    </div>
+    <p class="quote-note">Statements above are attributed to Robert Moore and are documented by Teamsters Local 14. They are presented as part of the Local's campaign concerning unfair labor practices at the Las Vegas facility.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <p class="eyebrow">In Their Own Words</p>
+    <h2>Worker Testimonials</h2>
+    <p class="lede">These are the workers of Vestis Las Vegas. They agreed to go on camera because they believe telling the truth is worth the risk.</p>
+    <div class="video-grid">
+
+      <!-- VIDEO CARD TEMPLATE: duplicate this block for each testimonial.
+           For YouTube: <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="..." allowfullscreen></iframe>
+           For Vimeo:   <iframe src="https://player.vimeo.com/video/VIDEO_ID" title="..." allowfullscreen></iframe>
+           For MP4:     <video controls preload="metadata" poster="thumb.jpg"><source src="video.mp4" type="video/mp4"></video> -->
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/TYhxC4h-NPE" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/UH0TjnE4ShI" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/IpL9_RXx1qY" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/dXdkc8rpMbs" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/W3OoZUACjy0" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/1m7fkUSCm7c" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/F2BTm2CYM1M" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/-1p3RbhTi5k" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/ddAEIkKLVnE" title="Las Vegas Vestis Worker Testimonial" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <h3>Las Vegas Vestis Worker Testimonial</h3>
+          <p>Teamsters Local 14</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="testimonial-note">Testimonials reflect the personal experiences and opinions of the workers speaking. All workers appearing on this site have signed media appearance and release forms.</p>
+  </div>
+</section>
+
+<section id="ulps">
+  <div class="wrap">
+    <p class="eyebrow">On the Record</p>
+    <h2>Unfair Labor Practice Charges</h2>
+    <p class="lede">Teamsters Local 14 has filed the following unfair labor practice charges against Vestis with the National Labor Relations Board. ULP charges are public records and can be verified at nlrb.gov.</p>
+    <div class="ulp-list">
+
+      <!-- ULP CARD TEMPLATE: duplicate per charge. Keep summaries factual and framed as allegations. -->
+
+      <div class="ulp-card">
+        <div class="ulp-date">July 15<br>2026</div>
+        <div class="ulp-body">
+          <h3>Retaliation Against Union Activists</h3>
+          <p>Filed under Sections 8(a)(1), 8(a)(3), and 8(a)(5) of the National Labor Relations Act. The charge alleges that on June 27, 2026, the same day a majority of the bargaining unit voted no on ratifying a collective bargaining agreement, a Vestis operations manager stated he would remove commission-generating route stops from three workers serving as union activists and shop stewards. These workers earn the majority of their pay through commission. The charge alleges these statements were made in retaliation for the no vote.</p>
+          <p class="ulp-case">NLRB Case No. 28-CA-390818 &bull; Filed by Teamsters Local 14</p>
+        </div>
+        <div class="ulp-status">Filed</div>
+      </div>
+
+      <div class="ulp-card">
+        <div class="ulp-date">July 23<br>2026</div>
+        <div class="ulp-body">
+          <h3>Unilateral Change in Working Conditions</h3>
+          <p>Filed under Sections 8(a)(1), 8(a)(3), and 8(a)(5) of the National Labor Relations Act. The charge alleges that Vestis interfered with, restrained, and coerced employees in the exercise of their Section 7 rights, including by changing the access code to the Las Vegas facility on June 30, 2026, three days after bargaining unit members voted no on ratifying their contract. The charge alleges this unilateral change of working conditions was retaliatory and coercive. As a remedy, the Union requests that Vestis cease and desist, bargain in good faith, and make all affected employees whole.</p>
+          <p class="ulp-case">NLRB Case No. 28-CA-391732 &bull; Filed by Teamsters Local 14</p>
+        </div>
+        <div class="ulp-status">Filed</div>
+      </div>
+
+    </div>
+    <p class="ulp-disclaimer">The charges described above are allegations filed with the National Labor Relations Board and remain pending unless otherwise noted. Filing a charge is not a finding of wrongdoing. Status labels will be updated as cases proceed.</p>
+  </div>
+</section>
+
+<section id="action">
+  <div class="wrap">
+    <p class="eyebrow">Stand With Vestis Workers</p>
+    <h2>Take Action</h2>
+    <div class="action-grid">
+      <div class="action-card">
+        <h3>Share Their Stories</h3>
+        <p>The fastest way to help is to make sure Vestis leadership and the public hear these workers. Share this site and the testimonial videos.</p>
+        <a href="#testimonials">Watch and share</a>
+      </div>
+      <div class="action-card">
+        <h3>Follow Local 14</h3>
+        <p>Get updates on the campaign, the strike authorization, and the ULP cases as they move forward.</p>
+        <a href="https://www.instagram.com/teamsters_14" target="_blank" rel="noopener">@Teamsters_14</a>
+      </div>
+      <div class="action-card">
+        <h3>Vestis Workers: Know Your Rights</h3>
+        <p>Retaliation for union activity is illegal under federal law. If you have experienced or witnessed it, Local 14 wants to hear from you.</p>
+        <a href="https://teamsters14.com" target="_blank" rel="noopener">Contact Local 14</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Teamsters <span>Local 14</span></p>
+      </div>
+      <ul class="foot-links">
+        <li><a href="https://teamsters14.com" target="_blank" rel="noopener">Teamsters14.com</a></li>
+        <li><a href="https://www.instagram.com/teamsters_14" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/14Teamsters" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://facebook.com/Teamsters14" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <p class="foot-legal">Paid for by Teamsters Local 14. This site describes unfair labor practice charges filed with the National Labor Relations Board and worker accounts of their own experiences. Allegations described here are pending and are not findings of fact by the NLRB or any court. &copy; 2026 Teamsters Local 14. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="mooreModal" role="dialog" aria-modal="true" aria-labelledby="mooreModalTitle">
+  <div class="modal">
+    <button class="modal-close-x" aria-label="Close" onclick="closeMooreModal()">&times;</button>
+    <div class="modal-head">
+      <span class="k">Teamsters Local 14 &bull; Documented Statements</span>
+      <h2 id="mooreModalTitle">In His Own Words</h2>
+    </div>
+    <div class="modal-body">
+      <div class="modal-q">
+        <blockquote>Vestis drivers &ldquo;make too much money.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+      <div class="modal-q">
+        <blockquote>You&rsquo;re &ldquo;nowhere near a 10.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, July 6, 2026</cite>
+      </div>
+      <div class="modal-q">
+        <blockquote>I am the &ldquo;equivalent of Jack in authority&rdquo; at Vestis.</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+      <div class="modal-q">
+        <blockquote>&ldquo;I don&rsquo;t think you&rsquo;re going to last here.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, July 22, 2026
+        <span class="ctx">Said in reference to a Route Sales Representative requesting time off when his daughter had heart surgery scheduled.</span></cite>
+      </div>
+      <div class="modal-q">
+        <blockquote>&ldquo;I&rsquo;ll be the last one to be fired.&rdquo;</blockquote>
+        <cite>&mdash; Robert Moore, June 29, 2026</cite>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-gold" href="#quotes" onclick="closeMooreModal()">See the Full Record</a>
+        <button class="btn btn-outline" onclick="closeMooreModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('mooreModal');
+  function openModal(){ modal.classList.add('show'); document.body.style.overflow='hidden'; }
+  window.closeMooreModal = function(){ modal.classList.remove('show'); document.body.style.overflow=''; };
+  // Show once per browser session
+  try {
+    if(!sessionStorage.getItem('mooreModalShown')){
+      window.addEventListener('load', function(){ setTimeout(openModal, 700); });
+      sessionStorage.setItem('mooreModalShown','1');
+    }
+  } catch(e){
+    // If sessionStorage is unavailable, still show on load
+    window.addEventListener('load', function(){ setTimeout(openModal, 700); });
+  }
+  // Close on overlay click or Escape
+  modal.addEventListener('click', function(e){ if(e.target === modal) window.closeMooreModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') window.closeMooreModal(); });
+})();
+</script>
+
+</body>
+</html>
